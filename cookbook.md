@@ -16,7 +16,7 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 ---End features_info.txt---
 
-Subsequently, the original dataset was then modified by merging, joining and summarizing. For each feature we computed the mean and standard deviation by subject and activity. This resulted in a final tidy dataframe: 180 obs. of 68 variables. (Note: '_XYZ' is used to denote 3-distinct variables (_X, _Y and _Z) calculating the mean/std in the X, Y and Z directions.)
+Subsequently, the original dataset was then modified by merging, joining and summarizing. For each feature we computed the mean and standard deviation by subject and activity of the above features. This resulted in a final tidy dataframe: 180 obs. of 68 variables. (Note: '_XYZ' is used to denote 3-distinct variables (_X, _Y and _Z) calculating the mean/std in the X, Y and Z directions.)
 
 The set of variables that were calculated from the extracted signals are: 
 
@@ -78,87 +78,108 @@ tBodyAcc_std_Y           : num
 tBodyAcc_std_Z           : num  
 Standard deviation of the estimated body acceleration signal (obtained by subtracting the gravity from the total acceleration) 
 
-
 tGravityAcc_mean_X       : num  
 tGravityAcc_mean_Y       : num  
 tGravityAcc_mean_Z       : num  
-Mean of the 
+Mean of the gravity acceleration signal 
 
 tGravityAcc_std_X        : num  
 tGravityAcc_std_Y        : num  
 tGravityAcc_std_Z        : num  
+Standard deviation of the gravity acceleration signal 
 
 tBodyAccJerk_mean_X      : num  
 tBodyAccJerk_mean_Y      : num  
 tBodyAccJerk_mean_Z      : num  
+Mean of Jerk signal -  derived from body linear acceleration 
 
 tBodyAccJerk_std_X       : num  
 tBodyAccJerk_std_Y       : num  
 tBodyAccJerk_std_Z       : num  
+Standard deviation of jerk signal -  derived from body linear acceleration 
 
 tBodyGyro_mean_X         : num  
 tBodyGyro_mean_Y         : num  
 tBodyGyro_mean_Z         : num  
+Mean of body angular velocity - derived from gyroscope 3-axial raw signals 
 
 tBodyGyro_std_X          : num  
 tBodyGyro_std_Y          : num  
 tBodyGyro_std_Z          : num  
+Standard deviation of body angular velocity - derived from gyroscope 3-axial raw signals 
 
 tBodyGyroJerk_mean_X     : num  
 tBodyGyroJerk_mean_Y     : num  
-tBodyGyroJerk_mean_Z     : num  
+tBodyGyroJerk_mean_Z     : num
+Mean of body Jerk signal -  derived from body angular velocity 
 
 tBodyGyroJerk_std_X      : num  
 tBodyGyroJerk_std_Y      : num  
 tBodyGyroJerk_std_Z      : num  
+Standard deviation of Jerk signal -  derived from body angular velocity
 
 tBodyAccMag_mean         : num  
 tBodyAccMag_std          : num  
+Mean/Standard deviation of body acceleration magnitude - calculated using the Euclidean norm 
 
 tGravityAccMag_mean      : num  
 tGravityAccMag_std       : num  
+Mean/Standard deviation of gravity acceleration magnitude -  calculated using the Euclidean norm 
 
 tBodyAccJerkMag_mean     : num  
 tBodyAccJerkMag_std      : num  
+Mean/Standard deviation of body jerk magnitude -  calculated using the Euclidean norm 
 
 tBodyGyroMag_mean        : num  
 tBodyGyroMag_std         : num  
+Mean/Standard deviation of gyro magnitude -  calculated using the Euclidean norm 
 
 tBodyGyroJerkMag_mean    : num  
 tBodyGyroJerkMag_std     : num  
+Mean/Standard deviation of gyro jerk magnitude -  calculated using the Euclidean norm 
 
 fBodyAcc_mean_X          : num  
 fBodyAcc_mean_Y          : num  
 fBodyAcc_mean_Z          : num  
+Mean of Fast Fourier Transform (FFT) applied to BodyAcc_mean
 
 fBodyAcc_std_X           : num  
 fBodyAcc_std_Y           : num  
 fBodyAcc_std_Z           : num  
+Standard deviation of Fast Fourier Transform (FFT) applied to BodyAcc_mean
 
 fBodyAccJerk_mean_X      : num  
 fBodyAccJerk_mean_Y      : num  
 fBodyAccJerk_mean_Z      : num  
+Mean of Fast Fourier Transform (FFT) applied to fBodyAccJerk
 
 fBodyAccJerk_std_X       : num  
 fBodyAccJerk_std_Y       : num  
 fBodyAccJerk_std_Z       : num  
+Standard deviation of Fast Fourier Transform (FFT) applied to fBodyAccJerk
 
 fBodyGyro_mean_X         : num  
 fBodyGyro_mean_Y         : num  
 fBodyGyro_mean_Z         : num  
+Mean of Fast Fourier Transform (FFT) applied to fBodyGyro
 
 fBodyGyro_std_X          : num  
 fBodyGyro_std_Y          : num  
 fBodyGyro_std_Z          : num  
+Standard deviation of Fast Fourier Transform (FFT) applied to fBodyGyro
 
 fBodyAccMag_mean         : num  
 fBodyAccMag_std          : num  
+Mean/Standard deviation of Fast Fourier Transform (FFT) applied to BodyAccMag
 
 fBodyBodyAccJerkMag_mean : num  
 fBodyBodyAccJerkMag_std  : num  
+Mean/Standard deviation of Fast Fourier Transform (FFT) applied to BodyAccJerkMag
 
 fBodyBodyGyroMag_mean    : num  
 fBodyBodyGyroMag_std     : num  
+Mean/Standard deviation of Fast Fourier Transform (FFT) applied to BodyGyroMag
 
 fBodyBodyGyroJerkMag_mean: num  
 fBodyBodyGyroJerkMag_std : num 
+Mean/Standard deviation of Fast Fourier Transform (FFT) applied to BodyGyroJerkMag
