@@ -1,7 +1,7 @@
-Cookbook for Course Project
+COOKBOOK FOR COURSE PROJECT
 
 Feature Selection
-The features selected for this dataset come from merging, joining and summarizing the features form the Human Activity Recognition Using Smartphones Dataset.
+	The features selected for this dataset come from merging, joining and summarizing the features form the Human Activity Recognition Using Smartphones Dataset.
 
 From features_info.txt:
 ------Start features_info.txt---
