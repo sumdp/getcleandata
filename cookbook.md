@@ -1,7 +1,7 @@
 COOKBOOK FOR COURSE PROJECT
 
-Feature Selection
-	The features selected for this dataset come from merging, joining and summarizing the features form the Human Activity Recognition Using Smartphones Dataset.
+FEATURE SELECTION
+The features selected for this dataset come from merging, joining and summarizing the features form the Human Activity Recognition Using Smartphones Dataset.
 
 From features_info.txt:
 ------Start features_info.txt---
@@ -16,9 +16,12 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 ---End features_info.txt---
 
-Subsequently, the original dataset was then modified by merging, joining and summarizing for each feature we computed the mean and standard deviation by subject and activity. This resulted in a final tidy dataframe: 180 obs. of 68 variables, consisting of:
+Subsequently, the original dataset was then modified by merging, joining and summarizing. For each feature we computed the mean and standard deviation by subject and activity. This resulted in a final tidy dataframe: 180 obs. of 68 variables. (Note: '_XYZ' is used to denote 3-distinct variables (_X, _Y and _Z) calculating the mean/std in the X, Y and Z directions.)
 
-Note: '_XYZ' is used to denote 3-distinct variables (_X, _Y and _Z) calculating the mean/std in the X, Y and Z directions. 
+The set of variables that were calculated from the extracted signals are: 
+
+mean_: Mean value
+std_: Standard deviation
 
 tBodyAcc_mean_XYZ
 tBodyAcc_std_XYZ
@@ -55,38 +58,31 @@ fBodyGyroMag_std
 fBodyGyroJerkMag_mean
 fBodyGyroJerkMag_std
 
-The set of variables that were estimated from these signals are: 
-
-mean(): Mean value
-std(): Standard deviation
-
-The complete list of variables of each feature vector is available below:
-
-
-List of variables & type
+LIST OF VARIABLES & TYPE
 
 subject                  : int
 Identifies the subject who performed the activity in test data, the experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years.
 Range: 1-30
+
 activity_description     : chr
 Activity description for six activities
 Includes: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 
-Accelerometer and gyroscope 3-axial raw signals tAcc-XYZ
-Mean of the triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-Mean The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-
 tBodyAcc_mean_X          : num  
 tBodyAcc_mean_Y          : num  
 tBodyAcc_mean_Z          : num  
+Mean of the estimated body acceleration signal (obtained by subtracting the gravity from the total acceleration) 
 
 tBodyAcc_std_X           : num  
 tBodyAcc_std_Y           : num  
 tBodyAcc_std_Z           : num  
+Standard deviation of the estimated body acceleration signal (obtained by subtracting the gravity from the total acceleration) 
+
 
 tGravityAcc_mean_X       : num  
 tGravityAcc_mean_Y       : num  
 tGravityAcc_mean_Z       : num  
+Mean of the 
 
 tGravityAcc_std_X        : num  
 tGravityAcc_std_Y        : num  
