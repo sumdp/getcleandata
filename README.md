@@ -1,7 +1,7 @@
 getcleandata
 ============
 
-Course Project for Coursera: Getting and Cleaning Data
+##Course Project for Coursera: Getting and Cleaning Data
 
 The purpose of this project is to demonstrate an ability to collect, work with, and clean a data set. The goal was to prepare tidy data that can be used for later analysis. The provided sample data was around wearable computing. Specifically, data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
@@ -47,8 +47,8 @@ Created the necessary dataframe with all the required test/training data with th
 
 IN order to extract 
 
-#Find variable names to extract - select only columns including: "mean()" - Mean value and "std()" - Standard deviation for signals needed to estimate variables of the feature vector. 
-#Excluding:
+###Find variable names to extract - select only columns including: "mean()" - Mean value and "std()" - Standard deviation for signals needed to estimate variables of the feature vector. 
+####Excluding:
 #meanFreq(): Weighted average of the frequency components -> not interested in mean frequency
 #gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean: additional vectors obtained by averaging the signals in a signal window sample
 
