@@ -1,4 +1,4 @@
-```{r}
+```
 
 #import dplyr library - makes life easier!
 library(dplyr)
@@ -56,4 +56,5 @@ meltdata <- melt(extracted_columns, id=c("subject", "activity_description"))
 cdata <- dcast(meltdata, subject + activity_description ~ variable, mean)
 #write file to upload as submission of Course Project for Getting and Cleaning Data - Coursera
 write.table(cdata, file = "average_tidy_data.txt", row.name=FALSE)
+
 ```
