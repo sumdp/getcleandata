@@ -42,6 +42,6 @@ gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean: a
 
 Upon cleaning and updating variable names that were clean & descriptive I could perform an optional sanity check by tabulating the data to see which subject performed what activity (this helps me to see where I stand and observe the data).
 
-Then I used the reshape2 library to simplify melting the dataframe by subject and activity description and casting the data in a tidy format.
+Then I used the reshape2 library to simplify melting the dataframe by subject and activity description and casting the data in a tidy format - 180 obs. of 68 variables.
 
 Final step was to write the file with tidy data to upload as submission of Course Project using write.table() as specified.
