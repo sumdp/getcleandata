@@ -38,7 +38,7 @@ In order to extract the signals needed to estimate mean/std variables of the fea
 
 I excluded:
 meanFreq(): Weighted average of the frequency components -> not interested in mean frequency
-#gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean: additional vectors obtained by averaging the signals in a signal window sample
+gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean: as these were additional vectors obtained by averaging the signals in a signal window sample
 
 Upon cleaning and updating variable names that were clean & descriptive I could perform an optional sanity check by tabulating the data to see which subject performed what activity (this helps me to see where I stand and observe the data).
 
