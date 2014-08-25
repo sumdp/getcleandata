@@ -3,6 +3,8 @@ getcleandata
 
 ##Course Project for Coursera: Getting and Cleaning Data
 
+###Introduction
+
 The purpose of this project is to demonstrate an ability to collect, work with, and clean a data set. The goal was to prepare tidy data that can be used for later analysis. The provided sample data was around wearable computing. Specifically, data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
 A full description of the data is available at the site where the data was obtained: 
@@ -25,7 +27,7 @@ This script completes the necessary 5 steps as directed from the course project 
 4) Appropriately labels the data set with descriptive variable names. 
 5) Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-##Logic
+###Logic
 My logic was to read all the data tables from the data file provided. I then labelled the data accordingly before merging as I found this easier. Labelling features with appropriate labels and giving descriptive column names for the training and test data allowed me to visualize the merging required. Also helped in later stages of the project, as I had already lined the class labels with their activity name.
 
 Merging the y_test & y_train data with activity labels using dplyr inner_join was one of the benefits of using the dplyr package as this keeps the order of dataframe. This was the reason I chose this method over the base package.
